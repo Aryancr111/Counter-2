@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Hello World this is Aryan Chaturvedi! Hosting a React App made for learning purposes during QuickSell's TSEC Hiring Process
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

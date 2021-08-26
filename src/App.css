@@ -1,38 +1,59 @@
-.App {
+.Counter {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  gap: 2rem;
+  height: 100vh;
+  color: #08660d;
+  background-color: #f3f3f3;
+  font-size: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button{
+  background-color: #dee2e0;
+  border-radius: 50%;
+  font-size: 36px;
+  padding:6px;
+  margin: 0.7rem;
+  margin-top: 0.1rem;
+  width: 65px;
+  outline: none;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #08660d;
+  transition: background-color 0.8s ease-in-out,
+  transform 50ms ease-in-out;
+  color:white;
+}
+
+button:active{
+  transform:scale(0.8);
+}
+
+.negative{
+  color: #c52c11;
+  animation:pulse 500ms ease-in-out;
+}
+
+.positive{
+  color: #129619;
+  animation:pulse 500ms ease-in-out;
+}
+
+@keyframes pulse{
+  0%, 100%{
+    transform: scale(1);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  50%{
+    transform:scale(1.2);
   }
 }
